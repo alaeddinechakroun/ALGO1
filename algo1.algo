@@ -1,0 +1,29 @@
+ALGORITHM Check point ALGO1
+VAR
+    PH : STRING
+    NB_M , NB_CH , NB_V : INTEGER := 0
+    i : INTEGER
+BEGIN
+    write("write a sentence")
+    read(PH)
+    
+    WHILE (PH(i) <> ".") DO
+        
+        NB_CH = NB_CH + 1
+
+        IF (PH(i) = ("a" , "e" , "i" , "y" , "u" , "o") ) THEN
+            NB_V = NB_V +1
+        END_IF
+
+        IF (PH(i) = " ") THEN
+            NB_M = NB_W +1
+        END_IF
+         
+        i++
+    END_WHILE
+
+    write(NB_M)
+    write(NB_CH)
+    write(NB_V)
+
+END
